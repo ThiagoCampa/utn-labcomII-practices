@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color: rgb(15, 228, 15);">Formulario de datos personales:</h1>
+    <hr><br>
+
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <input type="text" name="estudiante" placeholder="ESTUDIANTE" readonly />
+        <br><br>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad">
+        <br><br>
+
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="AR">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="CO">Colombia</option>
+            <option value="BO">Bolivia</option>
+            <option value="PA">Paraguay</option>
+            <option value="CH">Chile</option>
+            <option value="Otro" selected>Otro</option>
+        </select>
+        <br><br>
+
+        <label for="condicion_laboral">Condicion laboral:</label>
+        <select name="condicion_laboral" id="condicion_laboral">
+            <option value="desempleado">Desempleado</option>
+            <option value="empleado_fijo">Empleado Fijo</option>
+            <option value="empleado_eventual">Empleado Eventual</option>
+            <option value="busca_empleo">En busca de empleo</option>
+            <option value="Otros" selected>Otros</option>
+        </select>
+        <br><br>
+
+        <fieldset>
+            <legend>Gustos personales</legend>
+
+            <label for="gustos_musicales">Ingresar gustos musicales:</label>
+            <input type="text" name="gustos_musicales" id="gustos_musicales">
+            <br><br>
+
+            <label for="comida_favorita">Seleccionar comida favorita:</label>
+            <select name="comida_favorita" id="comida_favorita">
+                <option value="Hamburguesa">Hamburguesa</option>
+                <option value="Empanadas">Empanadas</option>
+                <option value="pizza">Pizza</option>
+                <option value="tarta">Tarta</option>
+                <option value="milanesa">Milanesa</option>
+                <option value="polo">Pollo</option>
+                <option value="Otros" selected>Otros</option>
+            </select>
+            <br>
+
+        </fieldset>
+
+        <br>
+        <input type="button" value="Enviar Formu">
+        <br>
+        <input type="checkbox" name="check" id="check">
+        <label for="checkbox">Guardar datos.</label>
+
+    </fieldset>
+</body>
+
+</html>

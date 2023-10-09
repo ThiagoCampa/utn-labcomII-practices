@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Datos del Alumno</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+
+<h2>Ingrese los datos del alumno</h2>
+
+<form id="alumnoForm">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" required><br>
+
+  <label for="apellido">Apellido:</label>
+  <input type="text" id="apellido" required><br>
+
+  <label for="domicilio">Domicilio:</label>
+  <input type="text" id="domicilio" required><br>
+
+  <label for="curso">Curso:</label>
+  <input type="text" id="curso" required><br>
+
+  <label for="carrera">Carrera:</label>
+  <input type="text" id="carrera" required><br>
+
+  <label for="materia">Materia:</label>
+  <input type="text" id="materia" required><br>
+
+  <label for="notaPrimerParcial">Nota primer parcial:</label>
+  <input type="number" id="notaPrimerParcial" required><br>
+
+  <button type="button" onclick="mostrarDatosAlumno()">Mostrar Datos</button>
+</form>
+
+<div id="datosAlumno"></div>
+
+</body>
+</html>

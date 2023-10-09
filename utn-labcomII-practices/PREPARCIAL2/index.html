@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Venta</title>
+</head>
+<body>
+  <h1>Calculadora de Venta</h1>
+  <script src="index.js" defer></script>
+  <form id="formulario">
+    <label for="cantidadPesos">Cantidad de pesos argentinos:</label>
+    <input type="number" id="cantidadPesos" name="cantidadPesos"><br><br>
+
+    <label for="moneda">Seleccionar moneda extranjera:</label>
+    <select id="moneda" name="moneda">
+      <option value="" disabled selected>Seleccione una moneda</option>
+      <option value="dolar">Dólares</option>
+      <option value="euro">Euros</option>
+    </select><br><br>
+
+    <button type="button" onclick="calcularVenta()">Calcular</button>
+  </form>
+
+  <h2>Agregar Nueva Moneda</h2>
+  <form id="agregarMonedaForm">
+    <label for="nuevaMoneda">Nombre de la moneda:</label>
+    <input type="text" id="nuevaMoneda" name="nuevaMoneda"><br><br>
+
+    <label for="costoConversion">Costo de conversión en pesos:</label>
+    <input type="number" id="costoConversion" name="costoConversion"><br><br>
+
+    <button type="button" onclick="agregarNuevaMoneda()">Agregar Moneda</button>
+  </form>
+
+  <div id="resultado"></div>
+</body>
+</html>
